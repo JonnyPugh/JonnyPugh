@@ -17,7 +17,13 @@ const MenuButton = () => (
 );
 
 const AppBarButton = ({ label, href, icon }) => (
-  <IconButton aria-label={label} color="inherit" href={href} target="_blank">
+  <IconButton
+    aria-label={label}
+    color="inherit"
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Badge color="secondary">
       <FontAwesomeIcon icon={icon} />
     </Badge>
