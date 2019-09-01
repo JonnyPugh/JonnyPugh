@@ -6,9 +6,7 @@ cache:
     - node_modules
 script:
   - npm run lint
-  - npm t
-deploy:
-  provider: script
-  script: npm run deploy
-  on:
-    branch: source
+  - npm test
+  - npm run deploy
+on:
+  branch: source
