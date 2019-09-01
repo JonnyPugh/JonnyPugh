@@ -25,7 +25,7 @@ const AppBarButton = ({ label, href, icon }) => (
 );
 
 export default () => (
-  <AppBar position="static">
+  <AppBar position="static" style={{ marginBottom: 32 }}>
     <Toolbar>
       <MenuButton />
       <Typography variant="h6" style={{ flexGrow: 1 }}>
