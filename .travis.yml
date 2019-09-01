@@ -7,6 +7,12 @@ cache:
 script:
   - npm run lint
   - npm test
-  - npm run deploy
-on:
-  branch: source
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  target_branch: master
+  on:
+    branch: source
