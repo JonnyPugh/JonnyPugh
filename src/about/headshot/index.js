@@ -1,5 +1,5 @@
-import React from 'react';
-import jonathan from './jonathan.png';
+import React from 'react'
+import jonathan from './jonathan.png'
 
 export default () => (
   <img
@@ -8,4 +8,4 @@ export default () => (
     width="100%"
     style={{ minWidth: '320px' }}
   />
-);
+)
