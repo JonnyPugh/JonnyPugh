@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography } from '@material-ui/core';
+import React from 'react'
+import { Typography } from '@material-ui/core'
 
 export default () => (
   <Typography>
@@ -10,4 +10,4 @@ export default () => (
     test-driven development, CI/CD pipelines, cloud technologies, serverless
     architectures, open-source projects, and inner-source projects.
   </Typography>
-);
+)

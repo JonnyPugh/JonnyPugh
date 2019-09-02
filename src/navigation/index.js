@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 import {
   AppBar,
   Toolbar,
   IconButton,
   Badge,
   Typography,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+} from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const MenuButton = () => (
   <IconButton edge="start" color="inherit" aria-label="menu">
     <MenuIcon />
   </IconButton>
-);
+)
 
 const AppBarButton = ({ label, href, icon }) => (
   <IconButton
@@ -28,7 +28,7 @@ const AppBarButton = ({ label, href, icon }) => (
       <FontAwesomeIcon icon={icon} />
     </Badge>
   </IconButton>
-);
+)
 
 export default () => (
   <AppBar position="static" style={{ marginBottom: 32 }}>
@@ -49,4 +49,4 @@ export default () => (
       />
     </Toolbar>
   </AppBar>
-);
+)
