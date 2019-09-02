@@ -17,12 +17,14 @@
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.18.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-all": "CI=true npm test",
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix"
@@ -38,6 +40,10 @@
     "singleQuote": true,
     "trailingComma": "all"
   },
+  "pre-commit": [
+    "lint",
+    "test-all"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
