@@ -28,7 +28,7 @@ export default () => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
     <Navbar />
-    <Container maxWidth="md">
+    <Container maxWidth='md'>
       <About />
     </Container>
   </ThemeProvider>
