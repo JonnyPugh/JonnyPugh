@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const MenuButton = () => (
-  <IconButton edge="start" color="inherit" aria-label="menu">
+  <IconButton edge='start' color='inherit' aria-label='menu'>
     <MenuIcon />
   </IconButton>
 )
@@ -19,32 +19,32 @@ const MenuButton = () => (
 const AppBarButton = ({ label, href, icon }) => (
   <IconButton
     aria-label={label}
-    color="inherit"
+    color='inherit'
     href={href}
-    target="_blank"
-    rel="noopener noreferrer"
+    target='_blank'
+    rel='noopener noreferrer'
   >
-    <Badge color="secondary">
+    <Badge color='secondary'>
       <FontAwesomeIcon icon={icon} />
     </Badge>
   </IconButton>
 )
 
 export default () => (
-  <AppBar position="static" style={{ marginBottom: 32 }}>
+  <AppBar position='static' style={{ marginBottom: 32 }}>
     <Toolbar>
       <MenuButton />
-      <Typography variant="h6" style={{ flexGrow: 1 }}>
+      <Typography variant='h6' style={{ flexGrow: 1 }}>
         Jonathan Pugh
       </Typography>
       <AppBarButton
-        label="GitHub"
-        href="https://github.com/jonnypugh"
+        label='GitHub'
+        href='https://github.com/jonnypugh'
         icon={faGithub}
       />
       <AppBarButton
-        label="LinkedIn"
-        href="https://www.linkedin.com/in/jonnypugh"
+        label='LinkedIn'
+        href='https://www.linkedin.com/in/jonnypugh'
         icon={faLinkedin}
       />
     </Toolbar>
