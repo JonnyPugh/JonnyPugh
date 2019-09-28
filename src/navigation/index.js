@@ -15,7 +15,8 @@ const Nav = styled(AppBar)({
 })
 
 const NavHeader = styled(Typography)({
-  flexGrow: 1,
+  marginRight: 'auto',
+  marginLeft: 'auto',
 })
 
 const NavButton = ({ label, href, icon }) => (
@@ -35,12 +36,14 @@ const NavButton = ({ label, href, icon }) => (
 export default () => (
   <Nav position='static'>
     <Toolbar>
-      <NavHeader variant='h6'>Jonathan Pugh</NavHeader>
       <NavButton
         label='GitHub'
         href='https://github.com/jonnypugh'
         icon={faGithub}
       />
+      <NavHeader variant='h5' align='center'>
+        Jonathan Pugh
+      </NavHeader>
       <NavButton
         label='LinkedIn'
         href='https://www.linkedin.com/in/jonnypugh'
