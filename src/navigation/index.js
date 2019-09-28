@@ -1,4 +1,5 @@
 import React from 'react'
+import { styled } from '@material-ui/styles'
 import {
   AppBar,
   Toolbar,
@@ -6,17 +7,18 @@ import {
   Badge,
   Typography,
 } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-const MenuButton = () => (
-  <IconButton edge='start' color='inherit' aria-label='menu'>
-    <MenuIcon />
-  </IconButton>
-)
+const Nav = styled(AppBar)({
+  marginBottom: 32,
+})
 
-const AppBarButton = ({ label, href, icon }) => (
+const NavHeader = styled(Typography)({
+  flexGrow: 1,
+})
+
+const NavButton = ({ label, href, icon }) => (
   <IconButton
     aria-label={label}
     color='inherit'
@@ -31,22 +33,19 @@ const AppBarButton = ({ label, href, icon }) => (
 )
 
 export default () => (
-  <AppBar position='static' style={{ marginBottom: 32 }}>
+  <Nav position='static'>
     <Toolbar>
-      <MenuButton />
-      <Typography variant='h6' style={{ flexGrow: 1 }}>
-        Jonathan Pugh
-      </Typography>
-      <AppBarButton
+      <NavHeader variant='h6'>Jonathan Pugh</NavHeader>
+      <NavButton
         label='GitHub'
         href='https://github.com/jonnypugh'
         icon={faGithub}
       />
-      <AppBarButton
+      <NavButton
         label='LinkedIn'
         href='https://www.linkedin.com/in/jonnypugh'
         icon={faLinkedin}
       />
     </Toolbar>
-  </AppBar>
+  </Nav>
 )
