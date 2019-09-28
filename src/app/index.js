@@ -2,9 +2,10 @@ import React from 'react'
 import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import { Container } from '@material-ui/core'
 import Navbar from '../navigation'
-import About from '../about'
+import AppContainer from '../container'
+import Background from '../background'
+import Education from '../education'
 
 const theme = createMuiTheme({
   palette: {
@@ -16,8 +17,9 @@ export default () => (
   <ThemeProvider theme={theme}>
     <CssBaseline />
     <Navbar />
-    <Container maxWidth='md'>
-      <About />
-    </Container>
+    <AppContainer>
+      <Background />
+      <Education />
+    </AppContainer>
   </ThemeProvider>
 )
