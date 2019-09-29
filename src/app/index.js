@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Navbar from '../navigation'
 import AppContainer from '../container'
 import Background from '../background'
+import Experience from '../experience'
 import Education from '../education'
 
 const theme = createMuiTheme({
@@ -19,6 +20,7 @@ export default () => (
     <Navbar />
     <AppContainer>
       <Background />
+      <Experience />
       <Education />
     </AppContainer>
   </ThemeProvider>

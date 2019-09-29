@@ -7,7 +7,7 @@ const GridItem = styled(Grid)({
 })
 
 export default ({ children }) => (
-  <Container maxWidth='md'>
+  <Container maxWidth='lg'>
     <Grid container spacing={3}>
       {children.map((component, index) => (
         <GridItem item xs key={index}>

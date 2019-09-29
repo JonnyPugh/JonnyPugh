@@ -7,13 +7,15 @@ import {
   CardContent,
 } from '@material-ui/core'
 
-export const ImageCard = ({ children, src, alt, title }) => (
+export const SectionCard = ({ children, src, alt, title }) => (
   <Card>
     <CardActionArea>
       <CardHeader title={title} />
-      <CardMedia>
-        <img src={src} alt={alt} width='100%'></img>
-      </CardMedia>
+      {src && (
+        <CardMedia>
+          <img src={src} alt={alt} width='100%' />
+        </CardMedia>
+      )}
       <CardContent>{children}</CardContent>
     </CardActionArea>
   </Card>

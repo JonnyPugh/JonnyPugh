@@ -1,16 +1,17 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 import jonathan from './jonathan.png'
-import { ImageCard } from '../common'
+import { SectionCard } from '../common'
 
 export default () => (
-  <ImageCard src={jonathan} alt='Jonathan Pugh' title='Background'>
+  <SectionCard src={jonathan} alt='Jonathan Pugh' title='Background'>
     <Typography>
-      Detail-oriented software engineer with a passion for cutting edge web
-      technologies. Experience working in agile full-stack environments with a
-      variety of technology stacks, test-driven development, CI/CD pipelines,
-      cloud technologies, serverless architectures, open-source projects, and
-      inner-source projects.
+      I am a detail-oriented full-stack Software Engineer with a passion for
+      cutting edge web technologies. I have experience working within agile
+      teams with a variety of technology stacks. I have a continuous improvement
+      mindset so I am constantly looking to apply new learning to solve
+      problems. One of my greatest strengths as an engineer is that I raise the
+      technical bar of teams and organizations that I work with.
     </Typography>
-  </ImageCard>
+  </SectionCard>
 )
